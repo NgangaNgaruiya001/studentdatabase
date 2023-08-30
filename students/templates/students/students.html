@@ -1,0 +1,73 @@
+{% extends 'students/main.html' %}
+
+{% block content %}
+
+<hr>
+<form method="get">
+
+	{{myFilter.form}}
+
+<button class="btn btn-primary" type="submit">
+	Search</button>	
+
+</form>
+
+
+	<div class="table table-sm">
+		<div class="col-md-12">
+		<h4>AGED Student database:</h4>
+		<hr>
+		<div class="card">
+			<a class="btn btn-info  btn-sm btn-block" href="">All Students</a>
+			<table class="table">
+				<tr>
+					<th>Programme</th>
+					<th>Gender</th>
+					<th>Enrollment year</th>
+					<th>Name</th>	
+					<th>Phone No.</th>
+					<th>Email address</th>	
+					<th>Completion Year</th>
+				</tr>
+
+					{% for i in students %}
+					<tr>
+					<td>{{i.programme}} </td>
+					<td>{{i.gender}} </td>
+					<td>{{i.enrollment_year}} </td>
+					<td>{{i.name}} </td>
+					<td>{{i.phone_number}} </td>
+					<td>{{i.email}} </td>
+					<td>{{i.completion_year}} </td>
+
+					
+					</tr>
+					{% endfor %}
+			</table>
+		</div>
+	</div>
+
+
+
+{% include 'students/creation.html' %}
+
+{% endblock %}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+	
