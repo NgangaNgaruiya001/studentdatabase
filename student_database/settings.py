@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'aged_student_database',
         'USER':'postgres',
         'PASSWORD':'Ab422450398',
-        'HOST':'db',
+        'HOST':'db:127.0.0.1',
         'PORT':'5432',
     }
 }
