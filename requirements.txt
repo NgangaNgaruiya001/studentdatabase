@@ -50,8 +50,6 @@ pandas==1.4.3
 pefile==2023.2.7
 Pillow==9.1.1
 pluggy==1.0.0
-psycopg==3.0
-psycopg2==2.9.6
 psycopg2-binary==2.9.6
 PyAutoGUI==0.9.53
 PyGetWindow==0.0.9
